@@ -11,7 +11,7 @@ SWEP.Category = "Tactical RP (Bonus)"
 SWEP.SubCatTier = "0Exotic"
 SWEP.SubCatType = "3Submachine Gun"
 
-SWEP.Description = "Customized MP5 with Swordfish kit, prototype foregrip and drum magazine. Weighted compensator improves recoil handling and smacks real hard too."
+SWEP.Description = "Customized MP5 with Swordfish kit, prototype foregrip and drum magazine. Weighted muzzle brake improves recoil handling and smacks real hard too."
 SWEP.Description_Quote = "\"The lesson for you is never try.\"" // this is in no way related to the gun but i like the quote ok
 
 SWEP.Trivia_Caliber = "9x19mm"
@@ -151,8 +151,8 @@ SWEP.BlindFirePos = Vector(0, -4, -3)
 SWEP.SprintAng = Angle(30, -15, 0)
 SWEP.SprintPos = Vector(8, -1, -2)
 
-SWEP.SightAng = Angle(0, 0.2, 0)
-SWEP.SightPos = Vector(-4.59, -7.5, -4.3)
+SWEP.SightAng = Angle(0, 0, 0)
+SWEP.SightPos = Vector(-4.59, -7.5, -4.45)
 
 SWEP.CorrectivePos = Vector(0.025, 0, 0.1)
 SWEP.CorrectiveAng = Angle(0, 0, 0)
@@ -249,22 +249,11 @@ SWEP.Attachments = {
         AttachSound = "TacRP/weapons/optic_on.wav",
         DetachSound = "TacRP/weapons/optic_off.wav",
         InstalledElements = {"optic"},
-        Pos_VM = Vector(-6.35, -0.3, 6),
+        Pos_VM = Vector(-6.5, -0.3, 6),
         Pos_WM = Vector(8, 1.7, -7.3),
         Ang_VM = Angle(90, 0, 0),
         Ang_WM = Angle(0, -3.5, 180),
     },
-    -- [2] = {
-        -- PrintName = "Muzzle",
-        -- Category = "silencer",
-        -- Bone = "ValveBiped.mp5_rootbone",
-        -- AttachSound = "TacRP/weapons/silencer_on.wav",
-        -- DetachSound = "TacRP/weapons/silencer_off.wav",
-        -- Pos_VM = Vector(-4.32, -0.3, 20.5),
-        -- Pos_WM = Vector(24, 2.5, -5.25),
-        -- Ang_VM = Angle(90, 0, 0),
-        -- Ang_WM = Angle(0, -3.5, 180),
-    -- },
     [2] = {
         PrintName = "Tactical",
         Category = {"tactical", "tactical_zoom", "tactical_ebullet"},
@@ -272,9 +261,9 @@ SWEP.Attachments = {
         AttachSound = "TacRP/weapons/flashlight_on.wav",
         DetachSound = "TacRP/weapons/flashlight_off.wav",
         InstalledElements = {"tactical"},
-        Pos_VM = Vector(-4, 0.5, 11),
+        Pos_VM = Vector(-4.15, -1.5, 11),
         Pos_WM = Vector(14, 1, -5),
-        Ang_VM = Angle(90, 0, 90),
+        Ang_VM = Angle(90, 0, -80),
         Ang_WM = Angle(0, -3.5, -90),
     },
     [3] = {
