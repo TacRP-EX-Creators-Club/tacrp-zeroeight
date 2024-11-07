@@ -1,0 +1,8 @@
+VertexLitGeneric
+{
+	"$basetexture"	"models\tacint_shark\weapons\mp5_zeroeight\Chamber"
+	"$bumpmap" 	"models\tacint_shark\weapons\mp5_zeroeight\Chamber_Normal"
+
+ 	"$normalmapalphaenvmapmask" "0"
+	"$nocull" "1"
+}

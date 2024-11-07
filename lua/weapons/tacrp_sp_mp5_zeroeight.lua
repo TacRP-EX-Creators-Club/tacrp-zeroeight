@@ -4,14 +4,14 @@ SWEP.Spawnable = true
 AddCSLuaFile()
 
 // names and stuff
-SWEP.PrintName = "MP5A3 \"Zero Eight\""
+SWEP.PrintName = "MP5A5 \"Zero Eight\""
 SWEP.AbbrevName = "Zero Eight"
 SWEP.Category = "Tactical RP (Bonus)"
 
-SWEP.SubCatTier = "1Elite"
+SWEP.SubCatTier = "0Exotic"
 SWEP.SubCatType = "3Submachine Gun"
 
-SWEP.Description = "Modified MP5 kitted out with a swordfish chassis, prototype K foregrip and using a 50-round drum."
+SWEP.Description = "Customized MP5 kit with Swordfish parts, prototype foregrip and a drum magazine. Weighted compensator improves recoil handling and smacks real hard too."
 SWEP.Description_Quote = ""
 
 SWEP.Trivia_Caliber = "9x19mm"
@@ -19,7 +19,7 @@ SWEP.Trivia_Manufacturer = "Heckler & Koch"
 SWEP.Trivia_Year = "1966"
 
 SWEP.Faction = TacRP.FACTION_NEUTRAL
-SWEP.Credits = "Assets: Tactical Intervention"
+SWEP.Credits = "Custom edited by speedonerd and 8Z\nMP5: Mr. Brightside, Stoke, Twinkie Masta, FxDarkloki\nAccessories: Treyarch, BlackSpot Entertainment, Crytek\nSound: Strelok"
 
 SWEP.ViewModel = "models/weapons/tacint_shark/v_mp5_zeroeight.mdl"
 SWEP.WorldModel = "models/weapons/tacint/w_mp5.mdl"
@@ -31,20 +31,20 @@ SWEP.BalanceStats = {
         Damage_Max = 20,
         Damage_Min = 14,
 
-        Range_Min = 1500,
-        Range_Max = 4000,
+        Range_Min = 1000,
+        Range_Max = 3000,
 
-        HipFireSpreadPenalty = 0.025,
+        HipFireSpreadPenalty = 0.04,
 
-        RecoilKick = 3.5,
+        RecoilKick = 3,
     },
     [TacRP.BALANCE_TTT] = {
         Damage_Max = 14,
         Damage_Min = 9,
 
-        RecoilSpreadPenalty = 0.0015,
+        RecoilSpreadPenalty = 0.0012,
         HipFireSpreadPenalty = 0.03,
-        RecoilMaximum = 12,
+        RecoilMaximum = 18,
 
         BodyDamageMultipliers = {
             [HITGROUP_HEAD] = 2,
@@ -57,31 +57,16 @@ SWEP.BalanceStats = {
             [HITGROUP_GEAR] = 0.9
         },
     },
-    [TacRP.BALANCE_PVE] = {
-        Damage_Max = 8,
-        Damage_Min = 4,
-
-        Range_Min = 1500,
-        Range_Max = 4000,
-
-        HipFireSpreadPenalty = 0.02,
-
-        RecoilKick = 2,
-    },
-    [TacRP.BALANCE_OLDSCHOOL] = {
-        RecoilMaximum = 20,
-        RecoilDissipationRate = 25
-    }
 }
 
 SWEP.TTTReplace = TacRP.TTTReplacePreset.SMG
 
 // "ballistics"
 
-SWEP.Damage_Max = 18
-SWEP.Damage_Min = 10
+SWEP.Damage_Max = 22
+SWEP.Damage_Min = 12
 SWEP.Range_Min = 800 // distance for which to maintain maximum damage
-SWEP.Range_Max = 2500 // distance at which we drop to minimum damage
+SWEP.Range_Max = 2700 // distance at which we drop to minimum damage
 SWEP.Penetration = 6 // units of metal this weapon can penetrate
 SWEP.ArmorPenetration = 0.7
 
@@ -102,41 +87,42 @@ SWEP.MuzzleVelocity = 13500
 
 SWEP.Firemodes = {
     2,
+    -3,
     1
 }
 
-SWEP.RPM = 750
+SWEP.RPM = 800
 
-SWEP.Spread = 0.0038
+SWEP.Spread = 0.004
 
 SWEP.ShootTimeMult = 0.5
 
 SWEP.RecoilResetInstant = false
 SWEP.RecoilPerShot = 1
-SWEP.RecoilMaximum = 12
+SWEP.RecoilMaximum = 22
 SWEP.RecoilResetTime = 0
 SWEP.RecoilDissipationRate = 40
 SWEP.RecoilFirstShotMult = 0.9
 
-SWEP.RecoilVisualKick = 0.5
-SWEP.RecoilKick = 3
-SWEP.RecoilStability = 0.4
+SWEP.RecoilVisualKick = 0.75
+SWEP.RecoilKick = 2
+SWEP.RecoilStability = 0.45
 
-SWEP.RecoilSpreadPenalty = 0.002
-SWEP.HipFireSpreadPenalty = 0.025
+SWEP.RecoilSpreadPenalty = 0.0014
+SWEP.HipFireSpreadPenalty = 0.028
 
 SWEP.CanBlindFire = true
 
 // handling
 
 SWEP.MoveSpeedMult = 0.95
-SWEP.ShootingSpeedMult = 0.85
+SWEP.ShootingSpeedMult = 0.8
 SWEP.SightedSpeedMult = 0.7
 
-SWEP.ReloadSpeedMult = 0.5
+SWEP.ReloadSpeedMult = 0.35
 
-SWEP.AimDownSightsTime = 0.33
-SWEP.SprintToFireTime = 0.33
+SWEP.AimDownSightsTime = 0.3
+SWEP.SprintToFireTime = 0.34
 
 SWEP.Sway = 0.75
 SWEP.ScopedSway = 0.25
@@ -161,8 +147,8 @@ SWEP.BlindFirePos = Vector(0, -4, -3)
 SWEP.SprintAng = Angle(30, -15, 0)
 SWEP.SprintPos = Vector(8, -1, -2)
 
-SWEP.SightAng = Angle(0.04, 0.45, 0)
-SWEP.SightPos = Vector(-4.56, -7.5, -3.98)
+SWEP.SightAng = Angle(0, 0.2, 0)
+SWEP.SightPos = Vector(-4.59, -7.5, -4.3)
 
 SWEP.CorrectivePos = Vector(0.025, 0, 0.1)
 SWEP.CorrectiveAng = Angle(0, 0, 0)
@@ -172,12 +158,14 @@ SWEP.HolsterSlot = TacRP.HOLSTER_SLOT_BACK
 SWEP.HolsterPos = Vector(5, 0, -6)
 SWEP.HolsterAng = Angle(0, 0, 0)
 
+SWEP.MeleeDamage = 40
+
 // reload
 
 SWEP.ClipSize = 50
 SWEP.Ammo = "pistol"
 
-SWEP.ReloadTimeMult = 1
+SWEP.ReloadTimeMult = 1.4
 SWEP.DropMagazineModel = "models/weapons/tacint/magazines/mp5.mdl"
 SWEP.DropMagazineImpact = "plastic"
 
@@ -187,11 +175,13 @@ SWEP.DropMagazineTime = 1
 // sounds
 
 local path = "TacRP/weapons/mp5/mp5_"
+local path1 = "tacint_extras/mp5_zeroeight/"
 
-SWEP.Sound_Shoot = "^" .. path .. "fire-1.wav"
+SWEP.Sound_Shoot = "^" .. path1 .. "mp5-1.wav"
 SWEP.Sound_Shoot_Silenced = path .. "fire_silenced-1.wav"
 
 SWEP.Vol_Shoot = 110
+SWEP.Pitch_Shoot = 92
 SWEP.ShootPitchVariance = 2.5 // amount to vary pitch by each shot
 
 // effects
@@ -201,7 +191,7 @@ SWEP.QCA_Muzzle = 1
 // ditto for shell
 SWEP.QCA_Eject = 2
 
-SWEP.MuzzleEffect = "muzzleflash_ak47"
+SWEP.MuzzleEffect = "muzzleflash_1"
 SWEP.EjectEffect = 1
 
 // anims
@@ -285,7 +275,7 @@ SWEP.Attachments = {
     },
     [3] = {
         PrintName = "Accessory",
-        Category = {"acc", "acc_foldstock2", "acc_sling", "acc_duffle", "acc_extmag_smg"},
+        Category = {"acc", "acc_foldstock", "acc_sling", "acc_duffle"},
         AttachSound = "tacrp/weapons/flashlight_on.wav",
         DetachSound = "tacrp/weapons/flashlight_off.wav",
     },
@@ -324,13 +314,10 @@ local function addsound(name, spath)
     })
 end
 
-addsound("TacInt_mp5.remove_clip", path .. "remove_clip.wav")
-addsound("TacInt_mp5.insert_clip", path .. "insert_clip.wav")
-addsound("TacInt_mp5.insert_clip-mid", path .. "insert_clip-mid.wav")
-addsound("TacInt_mp5.HK_Slap", path .. "hk_slap.wav")
-addsound("TacInt_mp5.bolt_back", path .. "bolt_back.wav")
-addsound("TacInt_mp5.fire_select", {
-    path .. "fire_select-1.wav",
-    path .. "fire_select-2.wav",
-    path .. "fire_select-3.wav",
-})
+addsound("tacint_mp5_zeroeight.remove_clip", path1 .. "magout.mp3")
+addsound("tacint_mp5_zeroeight.insert_clip", path1 .. "magin1.mp3")
+addsound("tacint_mp5_zeroeight.insert_clip2", path1 .. "magin2.mp3")
+addsound("tacint_mp5_zeroeight.insert_clip-mid", path .. "insert_clip-mid.wav")
+addsound("tacint_mp5_zeroeight.HK_Slap", path1 .. "boltslap.mp3")
+addsound("tacint_mp5_zeroeight.bolt_back", path1 .. "boltback.mp3")
+addsound("tacint_mp5_zeroeight.fire_select", path1 .. "safety.mp3")
