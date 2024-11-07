@@ -11,8 +11,8 @@ SWEP.Category = "Tactical RP (Bonus)"
 SWEP.SubCatTier = "0Exotic"
 SWEP.SubCatType = "3Submachine Gun"
 
-SWEP.Description = "Customized MP5 kit with Swordfish parts, prototype foregrip and a drum magazine. Weighted compensator improves recoil handling and smacks real hard too."
-SWEP.Description_Quote = ""
+SWEP.Description = "Customized MP5 with Swordfish kit, prototype foregrip and drum magazine. Weighted compensator improves recoil handling and smacks real hard too."
+SWEP.Description_Quote = "\"The lesson for you is never try.\"" // this is in no way related to the gun but i like the quote ok
 
 SWEP.Trivia_Caliber = "9x19mm"
 SWEP.Trivia_Manufacturer = "Heckler & Koch"
@@ -91,32 +91,36 @@ SWEP.Firemodes = {
     1
 }
 
-SWEP.RPM = 800
+SWEP.RPM = 750
+SWEP.RPMMultBurst = 1.25
+SWEP.PostBurstDelay = 0.12
+
+SWEP.RunawayBurst = true
 
 SWEP.Spread = 0.004
 
-SWEP.ShootTimeMult = 0.5
+SWEP.ShootTimeMult = 0.65
 
 SWEP.RecoilResetInstant = false
 SWEP.RecoilPerShot = 1
-SWEP.RecoilMaximum = 22
+SWEP.RecoilMaximum = 18
 SWEP.RecoilResetTime = 0
 SWEP.RecoilDissipationRate = 40
-SWEP.RecoilFirstShotMult = 0.9
+SWEP.RecoilFirstShotMult = 1
 
 SWEP.RecoilVisualKick = 0.75
 SWEP.RecoilKick = 2
 SWEP.RecoilStability = 0.45
 
-SWEP.RecoilSpreadPenalty = 0.0014
+SWEP.RecoilSpreadPenalty = 0.0016
 SWEP.HipFireSpreadPenalty = 0.028
 
 SWEP.CanBlindFire = true
 
 // handling
 
-SWEP.MoveSpeedMult = 0.95
-SWEP.ShootingSpeedMult = 0.8
+SWEP.MoveSpeedMult = 0.925
+SWEP.ShootingSpeedMult = 0.65
 SWEP.SightedSpeedMult = 0.7
 
 SWEP.ReloadSpeedMult = 0.35
@@ -124,10 +128,10 @@ SWEP.ReloadSpeedMult = 0.35
 SWEP.AimDownSightsTime = 0.3
 SWEP.SprintToFireTime = 0.34
 
-SWEP.Sway = 0.75
+SWEP.Sway = 1
 SWEP.ScopedSway = 0.25
 
-SWEP.FreeAimMaxAngle = 3.5
+SWEP.FreeAimMaxAngle = 4
 
 // hold types
 
@@ -181,7 +185,7 @@ SWEP.Sound_Shoot = "^" .. path1 .. "mp5-1.wav"
 SWEP.Sound_Shoot_Silenced = path .. "fire_silenced-1.wav"
 
 SWEP.Vol_Shoot = 110
-SWEP.Pitch_Shoot = 92
+SWEP.Pitch_Shoot = 95
 SWEP.ShootPitchVariance = 2.5 // amount to vary pitch by each shot
 
 // effects
@@ -206,8 +210,8 @@ SWEP.AnimationTranslationTable = {
 }
 
 SWEP.ProceduralIronFire = {
-    vm_pos = Vector(0, -1, -0.1),
-    vm_ang = Angle(0, 0.4, 0),
+    vm_pos = Vector(0, -1, -0.15),
+    vm_ang = Angle(0, 0.3, 0),
     t = 0.25,
     tmax = 0.25,
 }
@@ -240,7 +244,7 @@ SWEP.NoRMR = true
 SWEP.Attachments = {
     [1] = {
         PrintName = "Optic",
-        Category = {"optic_cqb", "optic_medium"},
+        Category = {"optic_cqb", "optic_medium", "optic_sniper"},
         Bone = "ValveBiped.mp5_rootbone",
         AttachSound = "TacRP/weapons/optic_on.wav",
         DetachSound = "TacRP/weapons/optic_off.wav",
