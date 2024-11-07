@@ -22,7 +22,7 @@ SWEP.Faction = TacRP.FACTION_NEUTRAL
 SWEP.Credits = "Custom edited by speedonerd and 8Z\nMP5: Mr. Brightside, Stoke, Twinkie Masta, FxDarkloki\nAccessories: Treyarch, BlackSpot Entertainment, Crytek\nSound: Strelok"
 
 SWEP.ViewModel = "models/weapons/tacint_shark/v_mp5_zeroeight.mdl"
-SWEP.WorldModel = "models/weapons/tacint/w_mp5.mdl"
+SWEP.WorldModel = "models/weapons/tacint_shark/w_mp5_zeroeight.mdl"
 
 SWEP.Slot = 2
 
@@ -170,7 +170,7 @@ SWEP.ClipSize = 50
 SWEP.Ammo = "pistol"
 
 SWEP.ReloadTimeMult = 1.4
-SWEP.DropMagazineModel = "models/weapons/tacint/magazines/mp5.mdl"
+SWEP.DropMagazineModel = "models/weapons/tacint_shark/magazines/mp5_zeroeight.mdl"
 SWEP.DropMagazineImpact = "plastic"
 
 SWEP.ReloadUpInTime = 1.55
@@ -250,7 +250,7 @@ SWEP.Attachments = {
         DetachSound = "TacRP/weapons/optic_off.wav",
         InstalledElements = {"optic"},
         Pos_VM = Vector(-6.35, -0.3, 6),
-        Pos_WM = Vector(7, 1.5, -6.5),
+        Pos_WM = Vector(8, 1.7, -7.3),
         Ang_VM = Angle(90, 0, 0),
         Ang_WM = Angle(0, -3.5, 180),
     },
@@ -273,7 +273,7 @@ SWEP.Attachments = {
         DetachSound = "TacRP/weapons/flashlight_off.wav",
         InstalledElements = {"tactical"},
         Pos_VM = Vector(-4, 0.5, 11),
-        Pos_WM = Vector(14, 1.3, -5),
+        Pos_WM = Vector(14, 1, -5),
         Ang_VM = Angle(90, 0, 90),
         Ang_WM = Angle(0, -3.5, -90),
     },
@@ -291,7 +291,7 @@ SWEP.Attachments = {
     },
     [5] = {
         PrintName = "Trigger",
-        Category = {"trigger_auto"},
+        Category = {"trigger_4pos"},
         AttachSound = "TacRP/weapons/flashlight_on.wav",
         DetachSound = "TacRP/weapons/flashlight_off.wav",
     },
