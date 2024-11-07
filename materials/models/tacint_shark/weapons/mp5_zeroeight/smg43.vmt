@@ -1,0 +1,23 @@
+"VertexlitGeneric"
+{
+	"$basetexture" "models\tacint_shark\weapons\mp5_zeroeight\smg43_spec"
+	"$bumpmap" "models\tacint_shark\weapons\mp5_zeroeight\smg43_ddn"
+	
+	
+	$color2 "[.8 .8 .8]"
+		
+	//"$envmap" "env_cubemap"
+	"$envmaptint" "[ .012 .012 .012]"
+	"$envmapconstrast" "1"
+	"$halflambert""1"
+	"$phong" "0"
+	"$phongfresnelranges" "[1 1 1]"
+	"$phongexponent" "95"
+	"$phongboost" "10"
+	"$phongalbedotint" 	"1"
+	"$phongalbedoboost" "15"
+	$nocull 1
+	"$rimlight" "1"
+	"$rimlightexponent" 	"50"	
+	"$rimlightboost"	"4"
+	"$rimmask" "1"

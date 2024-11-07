@@ -1,0 +1,15 @@
+"VertexLitGeneric"
+{
+	"$basetexture" "models/tacint_shark/weapons/mp5_zeroeight/pd2_swordfish_d"
+	"$bumpmap" "models/tacint_shark/weapons/mp5_zeroeight/pd2_swordfish_n"
+	"$nolod" 1
+	"$translucent" 0
+	"$halflambert""1"
+	"$phong" "0"
+	"$phongfresnelranges" "[1 1 1]"
+	"$phongexponent" "95"
+	"$phongboost" "10"
+	"$phongalbedotint" 	"1"
+	"$phongalbedoboost" "15"
+	"$color2" "[ 0.75 0.8 0.8 ]"
+}

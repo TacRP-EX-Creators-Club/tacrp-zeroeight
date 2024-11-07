@@ -1,0 +1,31 @@
+"VertexlitGeneric"
+{
+	"$basetexture" "models\tacint_shark\weapons\mp5_zeroeight\swordfish"
+	"$bumpmap" "models\tacint_shark\weapons\mp5_zeroeight\swordfish_n"
+	"$phongexponenttexture" "models\tacint_shark\weapons\mp5_zeroeight\swordfish_s"
+
+	//"$envmap" "env_cubemap"
+	"$envmaptint" "[ .008 .008 .008]"
+	"$envmapconstrast" "1"
+	"$halflambert""1"
+	"$phong" "0"
+	"$phongfresnelranges" "[2.5 2.5 2.5]"
+	"$phongexponent" "105"
+	"$phongboost" "10"
+	"$phongalbedotint" 	"1"
+	"$phongalbedoboost" "15"
+	$nocull 1
+	"$rimlight" "1"
+	"$rimlightexponent" 	"55"	
+	"$rimlightboost"	"51"
+	"$rimmask" "1"
+
+	//$color2 "[.75 .75 .75]"
+	$color2 "[.8 .8 .8]"
+
+}
+
+
+
+
+
