@@ -34,9 +34,11 @@ SWEP.BalanceStats = {
         Range_Min = 800,
         Range_Max = 2500,
 
-        HipFireSpreadPenalty = 0.04,
+        HipFireSpreadPenalty = 0.035,
+        RPM = 750,
 
-        AimDownSightsTime = 0.34,
+        AimDownSightsTime = 0.37,
+        SprintToFireTime = 0.4,
         RecoilKick = 4,
 
         BodyDamageMultipliers = {
@@ -54,9 +56,14 @@ SWEP.BalanceStats = {
         Damage_Max = 14,
         Damage_Min = 9,
 
+        Range_Min = 500,
+        Range_Max = 2000,
+
         HipFireSpreadPenalty = 0.04,
-        AimDownSightsTime = 0.34,
-        RecoilKick = 4,
+        AimDownSightsTime = 0.37,
+        SprintToFireTime = 0.4,
+        RecoilKick = 5,
+        RPM = 700,
 
         RecoilSpreadPenalty = 0.0012,
         RecoilMaximum = 18,
@@ -140,13 +147,13 @@ SWEP.SightedSpeedMult = 0.7
 
 SWEP.ReloadSpeedMult = 0.35
 
-SWEP.AimDownSightsTime = 0.3
-SWEP.SprintToFireTime = 0.35
+SWEP.AimDownSightsTime = 0.33
+SWEP.SprintToFireTime = 0.37
 
-SWEP.Sway = 1
-SWEP.ScopedSway = 0.25
+SWEP.Sway = 1.25
+SWEP.ScopedSway = 0.35
 
-SWEP.FreeAimMaxAngle = 4
+SWEP.FreeAimMaxAngle = 4.5
 
 // hold types
 
