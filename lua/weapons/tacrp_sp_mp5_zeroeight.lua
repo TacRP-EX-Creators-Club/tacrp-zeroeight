@@ -11,15 +11,15 @@ SWEP.Category = "Tactical RP (Bonus)"
 SWEP.SubCatTier = "0Exotic"
 SWEP.SubCatType = "3Submachine Gun"
 
-SWEP.Description = "Customized MP5 with Swordfish kit, prototype foregrip and drum magazine. Weighted muzzle brake improves recoil handling and smacks real hard too."
+SWEP.Description = "Customized 10mm MP5 with Swordfish kit, prototype foregrip and drum magazine. Weighted muzzle brake improves recoil handling and smacks real hard too."
 SWEP.Description_Quote = "\"The lesson for you is never try.\"" // this is in no way related to the gun but i like the quote ok
 
-SWEP.Trivia_Caliber = "9x19mm"
-SWEP.Trivia_Manufacturer = "Heckler & Koch"
-SWEP.Trivia_Year = "1966"
+SWEP.Trivia_Caliber = "10mm Auto"
+SWEP.Trivia_Manufacturer = "Neptunium Arms" // Fictional
+SWEP.Trivia_Year = "2017"
 
 SWEP.Faction = TacRP.FACTION_NEUTRAL
-SWEP.Credits = "Custom edited by speedonerd and 8Z\nMP5: Mr. Brightside, Stoke, Twinkie Masta, FxDarkloki\nAccessories: Treyarch, BlackSpot Entertainment, Crytek\nSound: Strelok"
+SWEP.Credits = "Custom edited by speedonerd and 8Z\nMP5: Mr. Brightside, Stoke, Twinkie Masta, FxDarkloki\nAccessories: Treyarch, BlackSpot Entertainment, Crytek\nSound: Strelok, CS:O2"
 
 SWEP.ViewModel = "models/weapons/tacint_shark/v_mp5_zeroeight.mdl"
 SWEP.WorldModel = "models/weapons/tacint_shark/w_mp5_zeroeight.mdl"
@@ -29,21 +29,36 @@ SWEP.Slot = 2
 SWEP.BalanceStats = {
     [TacRP.BALANCE_SBOX] = {
         Damage_Max = 20,
-        Damage_Min = 14,
+        Damage_Min = 12,
 
-        Range_Min = 1000,
-        Range_Max = 3000,
+        Range_Min = 800,
+        Range_Max = 2500,
 
         HipFireSpreadPenalty = 0.04,
 
-        RecoilKick = 3,
+        AimDownSightsTime = 0.34,
+        RecoilKick = 4,
+
+        BodyDamageMultipliers = {
+            [HITGROUP_HEAD] = 3,
+            [HITGROUP_CHEST] = 1,
+            [HITGROUP_STOMACH] = 1.25,
+            [HITGROUP_LEFTARM] = 1,
+            [HITGROUP_RIGHTARM] = 1,
+            [HITGROUP_LEFTLEG] = 0.9,
+            [HITGROUP_RIGHTLEG] = 0.9,
+            [HITGROUP_GEAR] = 0.9
+        },
     },
     [TacRP.BALANCE_TTT] = {
         Damage_Max = 14,
         Damage_Min = 9,
 
+        HipFireSpreadPenalty = 0.04,
+        AimDownSightsTime = 0.34,
+        RecoilKick = 4,
+
         RecoilSpreadPenalty = 0.0012,
-        HipFireSpreadPenalty = 0.03,
         RecoilMaximum = 18,
 
         BodyDamageMultipliers = {
@@ -63,12 +78,12 @@ SWEP.TTTReplace = TacRP.TTTReplacePreset.SMG
 
 // "ballistics"
 
-SWEP.Damage_Max = 22
-SWEP.Damage_Min = 12
+SWEP.Damage_Max = 23
+SWEP.Damage_Min = 14
 SWEP.Range_Min = 800 // distance for which to maintain maximum damage
-SWEP.Range_Max = 2700 // distance at which we drop to minimum damage
+SWEP.Range_Max = 2800 // distance at which we drop to minimum damage
 SWEP.Penetration = 6 // units of metal this weapon can penetrate
-SWEP.ArmorPenetration = 0.7
+SWEP.ArmorPenetration = 0.75
 
 SWEP.BodyDamageMultipliers = {
     [HITGROUP_HEAD] = 4.5,
@@ -81,7 +96,7 @@ SWEP.BodyDamageMultipliers = {
     [HITGROUP_GEAR] = 0.9
 }
 
-SWEP.MuzzleVelocity = 13500
+SWEP.MuzzleVelocity = 15500
 
 // misc. shooting
 
@@ -91,9 +106,9 @@ SWEP.Firemodes = {
     1
 }
 
-SWEP.RPM = 750
-SWEP.RPMMultBurst = 1.25
-SWEP.PostBurstDelay = 0.12
+SWEP.RPM = 775
+SWEP.RPMMultBurst = 1.3
+SWEP.PostBurstDelay = 0.13
 
 SWEP.RunawayBurst = true
 
@@ -108,9 +123,9 @@ SWEP.RecoilResetTime = 0
 SWEP.RecoilDissipationRate = 40
 SWEP.RecoilFirstShotMult = 1
 
-SWEP.RecoilVisualKick = 0.75
-SWEP.RecoilKick = 2
-SWEP.RecoilStability = 0.45
+SWEP.RecoilVisualKick = 1
+SWEP.RecoilKick = 3
+SWEP.RecoilStability = 0.5
 
 SWEP.RecoilSpreadPenalty = 0.0016
 SWEP.HipFireSpreadPenalty = 0.028
@@ -126,7 +141,7 @@ SWEP.SightedSpeedMult = 0.7
 SWEP.ReloadSpeedMult = 0.35
 
 SWEP.AimDownSightsTime = 0.3
-SWEP.SprintToFireTime = 0.34
+SWEP.SprintToFireTime = 0.35
 
 SWEP.Sway = 1
 SWEP.ScopedSway = 0.25
@@ -168,6 +183,7 @@ SWEP.MeleeDamage = 40
 
 SWEP.ClipSize = 50
 SWEP.Ammo = "pistol"
+SWEP.Ammo_Expanded = "ti_pistol_heavy"
 
 SWEP.ReloadTimeMult = 1.4
 SWEP.DropMagazineModel = "models/weapons/tacint_shark/magazines/mp5_zeroeight.mdl"
@@ -181,11 +197,11 @@ SWEP.DropMagazineTime = 1
 local path = "TacRP/weapons/mp5/mp5_"
 local path1 = "tacint_extras/mp5_zeroeight/"
 
-SWEP.Sound_Shoot = "^" .. path1 .. "mp5-1.wav"
+SWEP.Sound_Shoot = "^" .. path1 .. "mp5-2.wav"
 SWEP.Sound_Shoot_Silenced = path .. "fire_silenced-1.wav"
 
 SWEP.Vol_Shoot = 110
-SWEP.Pitch_Shoot = 95
+SWEP.Pitch_Shoot = 100
 SWEP.ShootPitchVariance = 2.5 // amount to vary pitch by each shot
 
 // effects
