@@ -4,7 +4,7 @@ SWEP.Spawnable = true
 AddCSLuaFile()
 
 // names and stuff
-SWEP.PrintName = "MP5A5 \"Zero Eight\""
+SWEP.PrintName = "MP5/10 \"Zero Eight\""
 SWEP.AbbrevName = "Zero Eight"
 SWEP.Category = "Tactical RP (Bonus)"
 
@@ -150,7 +150,7 @@ SWEP.FreeAimMaxAngle = 4
 
 // hold types
 
-SWEP.HoldType = "ar2"
+SWEP.HoldType = "smg"
 SWEP.HoldTypeSprint = "passive"
 SWEP.HoldTypeBlindFire = false
 
@@ -246,13 +246,16 @@ SWEP.AttachmentElements = {
     ["optic"] = {
         BGs_VM = {
             {2, 1}
+        },        
+		BGs_WM = {
+            {2, 1}
         },
     },
-    ["tactical"] = {
-        BGs_VM = {
-            {3, 1}
-        },
-    },
+    -- ["tactical"] = {
+        -- BGs_VM = {
+            -- {3, 1}
+        -- },
+    -- },
 }
 
 SWEP.NoRMR = true
@@ -278,7 +281,7 @@ SWEP.Attachments = {
         DetachSound = "TacRP/weapons/flashlight_off.wav",
         InstalledElements = {"tactical"},
         Pos_VM = Vector(-4.15, -1.5, 11),
-        Pos_WM = Vector(14, 1, -5),
+        Pos_WM = Vector(14, 1, -5.15),
         Ang_VM = Angle(90, 0, -80),
         Ang_WM = Angle(0, -3.5, -90),
     },
